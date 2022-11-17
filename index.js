@@ -7,5 +7,18 @@ Array.prototype.add = function(){
     }
     return sum;
 }
-
 console.log(arr.add());
+
+Array.prototype.break = function(start,end){
+    let arr = [];
+    if(end==null){
+        end=this.length;
+    }
+    for(let i=start;i<=end-start;i++){
+        arr.push(this[i])
+    }
+
+    return arr;
+}
+
+console.log(arr.break(1,3))
